@@ -64,7 +64,10 @@ Test program (rdb_write, rdb_read):
   ./rdb_read -o /tmp/testout ./librollingdb.so.2-1503072730590
   ```
 
-    
+Docker
+------
+  docker build --tag rdb_read .
+  docker run -it --rm -v $(pwd):/data:ro rdb_read    
 
 License:
 ---------
